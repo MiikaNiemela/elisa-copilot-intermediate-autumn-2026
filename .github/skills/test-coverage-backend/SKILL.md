@@ -1,5 +1,5 @@
 ---
-name: test-coverage
+name: test-coverage-backend
 description: "Generate and analyze backend Vitest coverage. Use when asked for coverage reports, incomplete test coverage, untested backend files, or prioritized unit-test recommendations."
 argument-hint: "Optional focus area, such as routes or analytics"
 user-invocable: true

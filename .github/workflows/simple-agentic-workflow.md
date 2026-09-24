@@ -16,6 +16,7 @@ tools:
 # Allow the agent to create one new issue.
 safe-outputs:
   create-issue:
+    max: 1
 ---
 
 # Simple repository check

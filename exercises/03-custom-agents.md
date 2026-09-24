@@ -72,4 +72,4 @@ Scaffold a custom agent that specializes in writing Vitest tests for the [backen
     ```
 
 3. Click on the "Configure tools" link above the tools section. Add additional tools if you think something useful is missing.
-4. Activate the agent in the agents mennu. Click on the tools button in the chat panel to see enabled tools. Only the tools listed in the agent definition should be enabled.
+4. Activate the agent in the agents menu. Click on the tools button in the chat panel to see enabled tools. Only the tools listed in the agent definition should be enabled.

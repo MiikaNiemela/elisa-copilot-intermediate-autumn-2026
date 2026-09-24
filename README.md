@@ -15,11 +15,11 @@ The exercises are performed against the small full-stack **Team Skills Matrix Pl
 
 ---
 
-# 📊 Team Skills Matrix
+## 📊 Team Skills Matrix
 
 A small but production-flavored platform for tracking engineering skills across teams: skills inventory, per-engineer competency levels, team heatmaps, gap analysis, and rule-based training recommendations.
 
-## 🛠️ Technology stack
+### 🛠️ Technology stack
 
 - **Frontend**: React 18 + Vite + TypeScript, React Router, TanStack Query
 - **Backend**: Node + Express + TypeScript, Lowdb (JSON file storage), zod validation
@@ -29,12 +29,12 @@ A small but production-flavored platform for tracking engineering skills across 
 - **Lint**: ESLint + @typescript-eslint
 - **Monorepo**: npm workspaces (`shared`, `backend`, `frontend`)
 
-## ✅ Requirements
+### ✅ Requirements
 
 - Node.js >= 20
 - npm (workspaces support)
 
-## 🚀 Getting started
+### 🚀 Getting started
 
 ```bash
 npm install
@@ -43,9 +43,9 @@ npm run dev      # backend on :47821, frontend on :51734 (Vite proxies /api)
 
 Open <http://localhost:51734>.
 
-## 📁 Project layout
+### 📁 Project layout
 
-```
+```log
 package.json            # workspaces, top-level scripts
 playwright.config.ts    # E2E config (boots backend + frontend preview)
 shared/                 # @tsm/shared types/enums (source-only package)
@@ -54,7 +54,7 @@ frontend/               # Vite React SPA
 e2e/                    # Playwright specs
 ```
 
-## 📜 Scripts
+### 📜 Scripts
 
 | Command              | What it does                                                |
 | -------------------- | ----------------------------------------------------------- |
@@ -66,7 +66,7 @@ e2e/                    # Playwright specs
 | `npm run lint`       | Lint all TypeScript                                         |
 | `npm run seed:reset` | Delete the backend dev DB (`backend/data/db.json`)          |
 
-## 🗑️ Resetting the data
+### 🗑️ Resetting the data
 
 The backend persists to [backend/data/db.json](backend/data/db.json), which is created from [backend/src/seed.json](backend/src/seed.json) on first start.
 
@@ -74,9 +74,9 @@ The backend persists to [backend/data/db.json](backend/data/db.json), which is c
 - To customize the initial dataset, edit `seed.json` and then reset.
 - The E2E database (`db.e2e.json`) is managed by Playwright and reset between runs — no manual action needed.
 
-## 🏛️ Architecture
+### 🏛️ Architecture
 
-```
+```text
 ┌────────────┐    HTTP/JSON     ┌──────────────────┐    JSON file
 │  Frontend  │  ───────────▶    │ Express REST API │  ───────────▶  Lowdb (db.json)
 │ (Vite SPA) │                  │  (validation,    │
@@ -85,9 +85,3 @@ The backend persists to [backend/data/db.json](backend/data/db.json), which is c
         ▲                              ▲
         └────────── @tsm/shared types ─┘
 ```
-
-
-
-
-
-
